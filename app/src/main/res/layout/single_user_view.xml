@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/item"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="6dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp"
+            android:layout_toEndOf="@id/ivProfile"
+            android:layout_toRightOf="@id/ivProfile"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/tvCreatedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEmail"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@id/ivProfile"
+            android:layout_toRightOf="@id/ivProfile"
+            android:textColor="#795548"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/appSelect"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:onClick="press_"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_plus"
+            android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvEmail"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textColor="#795548"/>
+
+            <Button
+                android:id="@+id/appSelect2"
+                android:onClick="press_on"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="left"
+                android:background="@drawable/btn_minus"
+                android:gravity="left"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Wacher</string>
+
+    <string name="facebook_app_id">137687067152000</string>
+    <string name="b_face">دخول عبر فيس بوك</string>
+    <string name="b_mial">دخول عبر الايميل</string>
+    <string name="et_mail">ادخل البريد الاليكتروني</string>
+    <string name="et_acountname">ادخل الاسم كامل</string>
+    <string name="et_acountpassword">ادخل كلمة السر</string>
+    <string name="et_acountensurepassword">تاكيد كلمة السر</string>
+    <string name="et_acountmail">ادخل البريد الاليكتروني</string>
+    <string name="et_password">ادخل كلمة السر</string>
+
+    <string name="enter_username">ادخل اسم المستخدم</string>
+    <string name="enter_email">ادخل اسم المستخدم</string>
+    <string name="enter_password">ادخل كلمة السر</string>
+    <string name="enter_password_again">ادخل كلمة السر مرة اخرى</string>
+    <string name="password_isnt_equal">كلمتين السر غير متساويتين</string>
+
+
+    <string name="b_login">دخول مستخدم</string>
+    <string name="b_newaccount">تسجيل مستخدم</string>
+    <string name="t_newAccount">دخول مستخدم</string>
+    <string name="t_forgetpassowrd">نسيت كلمة السر؟</string>
+
+    <string name="t_u_want_login">ليس لديك حساب؟ إنشاء حساب جديد</string>
+    <string name="enter_valid_email">ادخل البريد الاليكتروني</string>
+
+    <string-array name="day_" >
+        <item >اليوم</item>
+        <item >السبت القادم</item>
+        <item >الاحد القادم</item>
+        <item >الاثنين القادم</item>
+        <item >الثلاثاء القادم</item>
+        <item >الاربعاء القادم</item>
+        <item >الخميس القادم</item>
+        <item >الجمعه القادمه</item>
+    </string-array>
+
+
+    <string-array name="apm" >
+        <item >صباحا</item>
+        <item >مساءا</item>
+    </string-array>
+    <string-array name="hour_" >
+        <item >1</item>
+        <item >2</item>
+        <item >3</item>
+        <item >4</item>
+        <item >5</item>
+        <item >6</item>
+        <item >7</item>
+        <item >8</item>
+        <item >9</item>
+        <item >10</item>
+        <item >11</item>
+        <item >12</item>
+    </string-array>
+
+
+    <string-array name="menut_" >
+        <item >00</item>
+        <item >15</item>
+        <item >20</item>
+        <item >30</item>
+        <item >40</item>
+        <item >45</item>
+    </string-array>
+
+</resources>

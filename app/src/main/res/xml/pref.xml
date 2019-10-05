@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="username_key"
+        android:layout="@layout/item_a"
+        android:summary="تغير اسم الحساب"
+        android:title="اسم الحساب"/>
+    <EditTextPreference
+        android:ellipsize="middle"
+        android:key="pubkey_key"
+        android:layout="@layout/item_b"
+        android:summary="تغير اسم البريد الاليكتروني"
+        android:title="ألبريد الايكتروني"/>
+    <EditTextPreference
+        android:layout="@layout/item_c"
+        android:key="privkey_key"
+        android:icon="@drawable/key"
+        android:summary="تغير كلمة السر"
+        android:title="كلمة السر"/>
+    <EditTextPreference
+        android:layout="@layout/item_d"
+        android:key="privkey_key"
+        android:summary="لحزف حسابك"
+        android:title="حزف حساب"/>
+</PreferenceScreen>

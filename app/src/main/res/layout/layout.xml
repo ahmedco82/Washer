@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed3851"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/l_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="ExtraText">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UselessParent">
+
+                <RadioButton
+                    android:id="@+id/radio_reject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:layoutDirection="rtl"
+                    android:text="رفض"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+
+                    android:textDirection="rtl"
+                    android:textSize="20dp"
+                    tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+                <RadioButton
+                    android:id="@+id/radio_accipt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@android:drawable/btn_radio"
+                    android:layoutDirection="rtl"
+                    android:text="قبول"
+                    android:textAlignment="textStart"
+                    android:textColor="#ffffff"
+                    android:textDirection="rtl"
+                    android:textSize="20dp"
+                    tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+            </RadioGroup>
+            />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="وقت التسليم"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <Spinner
+            android:id="@+id/spin_day"
+            style="@style/spinner_style"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/day_"
+            android:paddingRight="40dp"
+            android:popupBackground="#fff78c"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,SpUsage" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="250dp"
+        android:layout_height="129dp"
+        android:layout_below="@+id/l_layout"
+        android:layout_marginTop="0dp"
+        android:background="#ed3851"
+        tools:ignore="ObsoleteLayoutParam">
+
+
+        <TextView
+            android:id="@+id/tv_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/spin_minutes"
+            android:paddingLeft="10dp"
+            android:text="ساعة"
+            android:textColor="#ffffff"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spin_minutes"
+            android:layout_alignBottom="@+id/spin_minutes"
+            android:layout_alignStart="@+id/button_holder"
+            android:paddingLeft="10dp"
+            android:text="دق"
+            android:textColor="#ffffff"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_pam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spin_hour"
+            android:layout_alignBottom="@+id/spin_hour"
+            android:layout_alignEnd="@+id/spin_apm"
+            android:layout_marginEnd="12dp"
+            android:paddingLeft="30dp"
+            android:text="ص/م"
+            android:textColor="#ffffff"
+            tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+
+        <Spinner
+            android:id="@+id/spin_hour"
+            style="@style/spinner_style"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingRight="30dp"
+            android:layout_alignStart="@+id/spin_minutes"
+            android:entries="@array/hour_"
+            android:popupBackground="#fff78c"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+        <Spinner
+            android:id="@+id/spin_minutes"
+            style="@style/spinner_style"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spin_hour"
+            android:layout_marginStart="16dp"
+            android:paddingRight="30dp"
+            android:layout_toEndOf="@+id/tv_m"
+            android:entries="@array/menut_"
+            android:popupBackground="#fff78c"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+
+        <Spinner
+            android:id="@+id/spin_apm"
+            style="@style/spinner_style"
+            android:layout_width="85dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spin_minutes"
+            android:layout_alignBottom="@+id/spin_minutes"
+            android:layout_toEndOf="@+id/spin_hour"
+            android:entries="@array/apm"
+            android:paddingRight="20dp"
+            android:popupBackground="#fff78c"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/text_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/button_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spin_hour"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/button_set"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="10dip"
+                android:text="الغاء"
+                tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="10dip"
+                android:onClick="AnswerRequest"
+                android:text="إرسال"
+                tools:ignore="ButtonOrder,ButtonStyle,HardcodedText,RtlHardcoded" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

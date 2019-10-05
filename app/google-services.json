@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "1058045279559",
+    "firebase_url": "https://washer-fc3d9.firebaseio.com",
+    "project_id": "washer-fc3d9",
+    "storage_bucket": "washer-fc3d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058045279559:android:6d69e6d68eae0fef",
+        "android_client_info": {
+          "package_name": "com.ahmedibrahim.waher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058045279559-dp530ltu05uq8vifgekc12mqm5ekv7hg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ahmedibrahim.waher",
+            "certificate_hash": "f3551d594a70a9d1199540ddfb18695f21ceb598"
+          }
+        },
+        {
+          "client_id": "1058045279559-a9odk68pol5idi0bg1m4s6qnf3lfjmkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1c3AD1rRTugJlGktN-7DTWMUBguT0oU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058045279559-a9odk68pol5idi0bg1m4s6qnf3lfjmkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058045279559:android:9926bb0c9391c79f",
+        "android_client_info": {
+          "package_name": "com.example.android.wacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058045279559-gaelu17ibv812aamj1v5nqai49265bbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.wacher",
+            "certificate_hash": "f3551d594a70a9d1199540ddfb18695f21ceb598"
+          }
+        },
+        {
+          "client_id": "1058045279559-a9odk68pol5idi0bg1m4s6qnf3lfjmkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1c3AD1rRTugJlGktN-7DTWMUBguT0oU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058045279559-a9odk68pol5idi0bg1m4s6qnf3lfjmkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058045279559:android:9f82b6068f4616ac",
+        "android_client_info": {
+          "package_name": "com.example.android.wacher.activities"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058045279559-a9odk68pol5idi0bg1m4s6qnf3lfjmkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_1c3AD1rRTugJlGktN-7DTWMUBguT0oU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

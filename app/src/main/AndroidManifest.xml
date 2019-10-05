@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ahmedibrahim.waher">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-sdk tools:overrideLibrary="com.facebook" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".utils.APP"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="com.ahmedibrahim.waher.webservices.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ahmedibrahim.waher.webservices.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.ahmedibrahim.waher.activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+      <activity android:name="com.ahmedibrahim.waher.activities.ForgetpassowrdActivity"
+          android:screenOrientation="portrait"/>
+      <activity android:name="com.ahmedibrahim.waher.activities.MainActivity"
+          android:screenOrientation="portrait"/>
+        <activity android:name="com.ahmedibrahim.waher.activities.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ahmedibrahim.waher.activities.CreateAccountActivity"
+            android:screenOrientation="portrait"/>
+        <activity  android:name="com.ahmedibrahim.waher.activities.PrefsActivity"
+            android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.ahmedibrahim.waher.activities.HomeActivity"
+            android:screenOrientation="portrait"
+         />
+        <activity android:name="com.ahmedibrahim.waher.activities.WinActivity"
+       android:screenOrientation="portrait"/>
+    </application>
+</manifest>

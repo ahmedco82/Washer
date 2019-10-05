@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Header aligned to top -->
+    <!--<include layout="@layout/header"/>-->
+    <!-- Footer aligned to bottom -->
+    <!-- <include layout="@layout/header" android:id="@+id/header"/>-->
+   <include layout="@layout/footer_list"
+    android:id="@+id/footer_list"/>
+   <!-- Content below header and above footer -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer_list"
+        android:gravity="center">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvAllUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="52dp">
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+</RelativeLayout>
